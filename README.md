@@ -20,24 +20,22 @@ swiper과 같은 좌우 이미지 슬라이더 입니다.
 slide-gallery-demo/
 ├── public/                               # 정적 파일 (icon, image등)
 ├── src/                                  # 소스 코드의 메인 디렉토리
+│   ├── app/                              # 재사용 가능한 UI 컴포넌트  
 │   ├── components/                       # 재사용 가능한 UI 컴포넌트
 │   │   ├── common/                       # 공통 컴포넌트 (Button, Input 등)
-│   │   │   ├── Button.jsx
-│   │   │   ├── FileNameDisplay.jsx
-│   │   │   └── FileUpload.jsx
+│   │   │   ├── gallery
+│   │   │   │     ├── Slider.tsx
+│   │   │   │     └── ImageBox.tsx
+│   │   │   └── tabInnerTabs.tsx
+│   │   │         └── InnerTabs.tsx  
 │   ├── hooks/                            # 커스텀 훅
-│   │   ├── useButtonHandler.ts
-│   │   ├── usePdfController.ts
-│   │   └── usePdfThumbnails.ts
-│   ├── styles/                           # 전역 스타일 및 테마
-│   │   ├── ButtonStyles.ts
-│   │   ├── ButtonStyles.ts
-│   │   └── StampUploaderStyles.ts
-│   └── constants.js                      # 상수 정의 
-├── .gitignore                            # Git 무시 파일
-├── package.json                          # 프로젝트 의존성
+│   │   ├── useDragAndDrop.ts
+│   │   └── useSlideBanner.ts
+│   └── styles/                           # 전역 스타일 및 테마
+│       ├── common.css
+│       └── global.css
 ├── README.md                             # 프로젝트 설명
-└── vite.config.js                        # Vite 설정
+└── package.json                          # 프로젝트 의존성
 </pre>
 
 
